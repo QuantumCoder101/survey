@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta charset="UTF-8">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url(sea.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
+</head>
+
+    <header>
+            <h1 id="title">QuantumCoder Survey Form</h1>
+        <p id="description"><em>Thank You for taking your time to help me improve my coding skills</em></p>
+    </header>
+    
+<body>
+ 
+   
+    
+    <!--Main container for a survey form-->
+    
+    <main>  
+        
+    <!--Survey form begining-->
+        
+
+    
+    <form id="survey-form">
+            
+    <!--Questions for getting users info-->
+            
+            <div>
+                <label id="name-label" for="name">Name</label><br>
+                    <input type="text" name="name" id="name" class="form" placeholder="Enter your name" required>  <br> 
+            </div>
+        
+            <div>
+                <label id="email-label" for="email">Email</label><br>
+                    <input type="email" name="email" id="email" class="form" placeholder="Enter your Email" required><br>
+            </div>
+        
+            <div>
+                <label id="number-label" for="number">Age</label><br>
+                    <input type="number" name="age" id="number" class="form" min="10" max="99" placeholder="Age">
+            
+            </div>
+        
+    <!--Dropdown menu-->
+            <div>
+            <p>Which option best describes your current role?<br>
+                <select id="dropdown" class="form" name="role" required>
+                    <option value="student">Student</option>
+                    <option value="freelancer">Freelancer</option>
+                    <option value="employee">Employee</option>
+                    <option value="employer">Employer</option>
+                    <option value="other">Other</option>
+                </select>      
+            </p>
+             </div>
+            
+    <!--Radio type questionare-->
+        
+        <div>
+            <p>Would you recommend my services to a friend?</p>
+            
+            <label>
+                <input type="radio" name="group" value="yes"  /> Yes 
+                <br>
+            </label>
+            <label>
+                <input type="radio" name="group" value="no"  /> No                     
+                <br>
+            </label>
+            <label>
+                <input type="radio" name="group" value="notsure"  /> Not sure
+                <br>
+            </label>
+            <label>
+                <input type="radio" name="group" value="definetly" checked="checked"  /> Definetly
+            </label>
+        </div>
+        
+    <!--Checkbox type questionare-->
+        
+            
+        <p>What would you like to see improved? (Check all that apply)</p><br>
+          
+        <div>
+                
+            <label>
+                <input type="checkbox" name="project" value="front" checked="checked"   /> Front-End development 
+            </label>   <br>
+                
+            <label>    
+                <input type="checkbox" name="project" value="end"  /> Back-end development      
+            </label>   <br> 
+                
+            <label>    
+                <input type="checkbox" name="project" value="data"  /> Data Visualization
+            </label><br>
+                
+            <label>    
+                <input type="checkbox" name="project" value="video"  /> Video
+            </label><br>
+                
+            <label>    
+                <input type="checkbox" name="project" value="notsure" /> Not Sure
+            </label>
+                
+        </div>
+        
+    <!--Commenting field-->  
+        
+        <div>
+        <p>Any comments or suggestions?</p>
+                <textarea id="comm" class="font" name="comments" cols="20" rows="4">Enter your comments here...
+                </textarea>
+        <br>
+        </div>
+                
+    <!--Submit button-->
+        <div>
+        
+            <button type="submit" name="submit" value="submit" id="submit">Submit</button>
+        
+        </div>
+    <!--Survey form ends-->
+        
+        
+    </form>
+        
+    </main>
+    
+   
+    
+</body>
+</html>
